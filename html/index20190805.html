@@ -1,0 +1,158 @@
+﻿{include file=head.html}
+<div class="tp-banner-container" id="index-slider"> 
+ <div class="tp-banner-1">     
+	<ul>
+     {pboot:slide num=8 gid=1}  
+     <li class="item" style="background:url([slide:src]) center top no-repeat;"></li>
+      {/pboot:slide}
+        </ul>   
+         <div class="tp-bannertimer"></div>
+          </div>
+        </div>
+
+          <section id="tabs-section" class="home-section tabs-section-horizontal">
+          <div class="container"> 
+             <div class="ver-tabs horiz-tabs">
+               <div class="row">     
+                  <div class="col-md-12">       
+                     <nav class="nav-sidebar">     
+                            <ul class="nav tabs">     
+
+                              <li> <a href="#tab1" data-toggle="tab">      
+                                 <div class="fa-box"><img src="{label:4_1_left}"/></div>               
+                                <div class="fa-content">
+                                <h4>
+                                   {pboot:content id=19}
+                             [content:title]
+                                    {/pboot:content}
+                                </h4> <p>     
+                                  {pboot:content id=19}
+                             [content:content drophtml=1 len=75]
+                                    {/pboot:content}</p> 
+                                       </div>
+                                     </a> </li>
+
+                                    <li class="active"> <a href="#tab2" data-toggle="tab">                
+                                    	<div class="fa-box"><img src="{label:4_2_mid}"/></div>
+                                    	   <div class="fa-content">
+                                <h4>
+                                   {pboot:content id=33}
+                             [content:title]
+                                    {/pboot:content}
+                                </h4> <p>     
+                                  {pboot:content id=33}
+                             [content:content drophtml=1 len=75]
+                                    {/pboot:content}</p> 
+                                       </div></a> </li>
+
+                                    <li> <a href="#tab3" data-toggle="tab">               
+                                    	<div class="fa-box"> <img src="{label:4_2_right}"/>
+                                      </div>                
+                                    	<div class="fa-content">
+                                <h4>
+                                   {pboot:content id=31}
+                             [content:title]
+                                    {/pboot:content}
+                                </h4> <p>     
+                                  {pboot:content id=31}
+                             [content:content drophtml=1 len=75]
+                                    {/pboot:content}</p> 
+                                       </div></a> </li>   
+                                             </ul></nav> </div></div> 
+
+                                       <div class="row">     
+                                          <div class="col-md-12">     
+                                               <div class="tab-content" id="whyus">      
+                                                     <div class="tab-pane text-style" id="tab1">        
+                                        <div class="col-md-6 whyus-right"> <img src="{label:picture_0}"/> </div>              </div>            </div>           
+
+                                       <div class="tab-pane active text-style" id="tab2"> 
+                                           <div class="row">                
+                                           	<div class="col-md-6 whyus-left">           
+                                           	       <h2 class="light-font">{pboot:content id=35}
+                             [content:title]
+                                    {/pboot:content}</h2>                           
+                                  {pboot:content id=35}
+                             [content:content drophtml=5 len=1000]
+                                    {/pboot:content}             <!--<a class="btn btn-primary btn-lg btn-icon-right">了解实际案例视频分享<div class="btn-icon"><i class="fa fa-long-arrow-right"></i></div></a>--> </div>      
+
+                       <div class="col-md-6 whyus-right"> <img src="{label:5_2_right}"/> </div>
+                     </div>
+                     </div>
+                     </div>
+                     </div>
+                     </div> 
+                     </div>
+                     </div>
+                     </section>
+
+<section class="home-section section-preset1 " id="index-about">
+
+  <div class="video-box">
+  <div class="video-box-left  animated " data-animation="fadeInLeft">      
+  <div class="video-box-info">
+    <ul class="list-style-check"> <li><h4>
+                                   {pboot:content id=36}
+                             [content:title]
+                                    {/pboot:content}
+                                </h4>
+                                <p>     
+                                  {pboot:content id=36}
+                             [content:content drophtml=1 len=00]
+                                    {/pboot:content}</p></li>
+                                  </ul></div>
+                                </div>
+                                 
+    <div class="video-box-right animated " data-animation="fadeInRight"><a class="video-popab"><img src="{label:6_2_right}" /></a> </div> 
+    </div> 
+           </section>
+
+  <link type="text/css" rel="Stylesheet" href="{pboot:sitetplpath}/css/contest.css" />
+<div class="c_meau">
+  <div class="fl">
+    <h4>联系方式</h4>
+    <div class="fl_o">
+      <dl class="fl_o_o">
+        <dt><img src="{label:per_weixin}"></dt>
+        <dd>微信公众号</dd>
+      </dl>
+     
+    <dl class="fl_o_o">
+        <dt>{label:head3}</dt>
+      </dl>
+      
+     <dl class="fl_o_o">
+        <dt><img src="{label:per_weixin}"></dt>
+        <dd>扫码注册</dd>
+      </dl>
+    </div>
+  <div class="clear"></div>
+</div>
+ </div>
+  </div>
+</div>
+
+
+        <footer class="footer footer-shop" id="footer-sec">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 foot-about">
+
+        <div class="fot-box">{pboot:content id=33} <h3 class="fot-title dark-title"><a href="[content:link]">
+                             [content:title]
+                                    {/pboot:content}</a></h3>
+          <div class="f-about">
+            <p> <b>{pboot:content id=33}
+                             [content:content drophtml=1 len=260]
+                                    {/pboot:content}</p>
+          </div>
+          
+          {pboot:content id=33}
+          <a href="[content:link]" class="btn btn-primary btn-icon-right">了解更多
+          <div class="btn-icon"><i class="fa fa-long-arrow-right"></i></div>
+          </a>
+          {/pboot:content}
+        </div>
+      </div>
+{include file=foot.html}
+</body></html>
